@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check</title>
+    <script>
+        function check(){
+            var name=document.getElementById("name").value;
+            var passwd=document.getElementById("passwd").value;
+            if(name.lenght >= 8 && name !="" && passwd.lenght >= 8 && passwd!=""){
+                alert('提交成功');
+            }
+            else{
+                alert('填写有错，提交失败');
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        姓名：<input type="text" size="15" id="name"><br><br>
+        密码：<input type="password" size="15" id="passwd"><br><br>
+        </select><br><br>
+        <input type="button" value="提交" onclick="check()">
+        <input type="button" value="重置">
+    </form>
+</body>
+</html>
+
